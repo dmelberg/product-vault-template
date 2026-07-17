@@ -21,7 +21,7 @@ strategy_doc: ""          # wikilink to the quarter's strategy
 ## Scope
 <!-- Qué cubre el equipo. -->
 
-## Contexto Fintoc
+## Contexto de negocio
 <!-- Contexto de negocio del trimestre: crecimiento, cuellos de botella, apuestas. -->
 - 
 

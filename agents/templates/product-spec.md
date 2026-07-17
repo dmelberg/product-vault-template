@@ -49,7 +49,7 @@ strategy_doc: ""          # wikilink to the quarter's strategy, e.g. [[2026-q3-o
 ### Key Features: API
 
 > [!tip]- 👨‍💻 Guía
-> Escribe esta sección como si fuera la documentación de Fintoc: POV del usuario, sin mencionar qué pasa por debajo. Contexto interno → Anexos.
+> Escribe esta sección como si fuera la documentación pública de tu producto: POV del usuario, sin mencionar qué pasa por debajo. Contexto interno → Anexos.
 
 #### Recurso *…*
 ***POST /v1/…***
@@ -78,7 +78,7 @@ strategy_doc: ""          # wikilink to the quarter's strategy, e.g. [[2026-q3-o
 #### Comunicación con clientes
 
 > [!tip]- 📬 Guía
-> Define los nuevos mails a clientes. Diseña el template con variables en Sendgrid y define destinatario. Actualiza la tabla en Notion al terminar.
+> Define los nuevos mails a clientes. Diseña el template con variables en tu proveedor de email y define destinatario. Actualiza la tabla en Notion al terminar.
 
 - …
 
@@ -129,7 +129,7 @@ flowchart LR
 ## Riesgos
 
 > [!tip]- 🚨 Guía
-> ¿Qué problema puede surgir y qué haremos si surge? Ej: necesitamos una cuenta de Banco Estado con mipass para desarrollar.
+> ¿Qué problema puede surgir y qué haremos si surge? Ej: necesitamos acceso a una cuenta sandbox de un proveedor externo para desarrollar.
 
 
 

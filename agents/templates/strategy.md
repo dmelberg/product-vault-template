@@ -13,7 +13,7 @@ notion_url: ""            # base Team Strategy Docs
 
 # 🎯 Misión
 
-*Fintoc quiere que pagar en Latam se sienta mágico.*
+*[Tu empresa en una línea — la misión general que enmarca la de tu equipo.]*
 
 <!-- La misión específica del equipo: qué reduce/mejora y por qué importa al negocio. -->
 
@@ -31,7 +31,7 @@ notion_url: ""            # base Team Strategy Docs
 
 # 🏅 Ventaja competitiva
 
-<!-- Por qué Fintoc está mejor posicionado que la competencia para ganar aquí. -->
+<!-- Por qué tu empresa está mejor posicionada que la competencia para ganar aquí. -->
 
 # 📈 Métricas
 
