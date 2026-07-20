@@ -45,12 +45,29 @@ session belongs to, ask before creating one.
 
 ---
 
+## To-do list
+
+[`todo.md`](todo.md) at the vault root is a running task list. It uses native
+Obsidian checkboxes (`- [ ]` / `- [x]`), so tasks can be checked off in Obsidian
+or edited by Claude in the same Markdown.
+
+- **Grouped by project** — tasks live under a heading that wikilinks to the
+  project they belong to (`[[YYYY-MM-<slug>/project|YYYY-MM-<slug>]]`);
+  project-agnostic tasks go under **General**.
+- **Priority** — tag each task inline: `#p1` (high) · `#p2` (medium) · `#p3`
+  (low). Filter in Obsidian search with `tag:#p1`.
+- **When working**, add tasks here as they surface, and check them off when
+  done. Add a project heading when a new project gets its first task.
+
+---
+
 ## Folder structure
 
 ```
 agents/
   AGENTS.md              # this guide
   CLAUDE.md              # @AGENTS.md
+  todo.md                # running task list, grouped by project
   projects/
     YYYY-MM-<slug>/      # one folder per project
       project.md         # overview + master frontmatter
@@ -69,6 +86,7 @@ agents/
     plan.md
     roadmap-review.md
     strategy.md
+  tools/                 # per-tool how-to for pulling data — ships empty, add one per source
   _archive/              # completed projects (same internal layout)
   scripts/
     new-project.sh       # scaffolds a project by --type
@@ -78,6 +96,23 @@ agents/
 Subfolders vary by type: `spec` and `strategy` get `research/`; all get
 `meetings/` and `documents/`; only `spec` gets `decisions/`. `new-project.sh`
 creates the right set automatically.
+
+---
+
+## Data sources
+
+When research needs data, pick the source by the *kind* of question, then open
+the matching how-to in [`tools/`](tools/) for the exact access steps, ids, and
+gotchas. **Read the tool doc only when you're actually pulling data** — this
+index stays light so it's cheap to load every session; the details live in the
+per-tool file (same pattern as `templates/`).
+
+`tools/` ships **empty by design**. Add one how-to per data source you use — for
+example a product-analytics tool, your data warehouse, or a SQL/query interface —
+then link it from a small index table here so the right source is easy to pick.
+
+Record what you pulled in the project's `research/` note (queries + the finding),
+and link the tool doc you used with a wikilink (e.g. `[[analytics]]`).
 
 ---
 
